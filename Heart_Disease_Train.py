@@ -16,7 +16,7 @@ def read_file(filepath):
 
     return text_data
 
-filename = '/home/harsha/Natural Language Processing/DataSet/Mark Twain- Yankee Connecticut.txt'
+filename = '/home/yamuna/Natural Language Processing/DataSet/Mark Twain- Yankee Connecticut.txt'
 text_data = read_file(filename)
 
 

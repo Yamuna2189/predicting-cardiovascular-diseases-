@@ -22,7 +22,7 @@ def nn_model():
     return model
 
 ## Filepath of the CSV File
-csv_file_path = '/home/harsha/Machine_Learning_Project/AI_J_Component/cardio_train.csv'
+csv_file_path = '/home/yamuna/Machine_Learning_Project/AI_J_Component/cardio_train.csv'
 df = pd.read_csv(csv_file_path, delimiter=';')
 df = df.dropna()
 df = df.iloc[:,1:12]
@@ -68,7 +68,7 @@ final=singledf.transpose()
 
 
 ##Predictiom
-weights_path = '/home/harsha/Machine_Learning_Project/AI_J_Component/Weights/weights-improvement-03-1.00.hdf5'
+weights_path = '/home/yamuna/Machine_Learning_Project/AI_J_Component/Weights/weights-improvement-03-1.00.hdf5'
 model.load_weights(weights_path)
 result = model.predict(final)
 
